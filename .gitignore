@@ -34,3 +34,6 @@
 
 # Image files
 *.ppm
+
+# VSCode
+.vscode
