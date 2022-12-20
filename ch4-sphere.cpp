@@ -20,6 +20,7 @@ vec3 color(const ray& r) {
     }
     vec3 unit_direction = unit_vector(r.direction());
     float t = 0.5 * (unit_direction.y() + 1.0); // scales a -1.0<x<1.0 vector to 0.0<x<1.0 one
+    // white to blue background gradient
     return (1.0 - t) * vec3(1.0, 1.0, 1.0) + t * vec3(0.5, 0.7, 1.0);
 }
 
