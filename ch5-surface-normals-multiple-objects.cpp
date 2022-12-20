@@ -7,7 +7,7 @@
 vec3 color(const ray& r, hitable *world) {
     hit_record rec;
     if (world->hit(r, 0.0, MAXFLOAT, rec)) {
-        // we're letting the color be a function of xyz (x=r, y=g, z=b)
+        // we're letting the color be a function of normal xyz (x=r, y=g, z=b)
         return 0.5 * vec3(rec.normal.x()+1, rec.normal.y()+1, rec.normal.z()+1);
     }
     else {
