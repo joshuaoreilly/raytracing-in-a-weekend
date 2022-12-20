@@ -35,6 +35,8 @@ int main() {
             float v = float(j) / float(ny);
             ray r(origin, lower_left_corner + u*horizontal + v*vertical);
 
+            // doesn't actually do anything, since the contact point is now
+            // contained in hit_record; maybe being kept around for future chapters?
             vec3 p = r.point_at_parameter(2.0);
             vec3 col = color(r, world);
             int ir = int(255.99*col[0]);
