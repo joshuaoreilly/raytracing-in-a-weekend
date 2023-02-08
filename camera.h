@@ -21,7 +21,6 @@ class camera {
             // vfov = vertical field of view from top-to-bottom in degrees (not just from camera normal to top)
             // aspect = aspect ratio (between vertical and horizontal)
             lens_radius = aperture / 2;
-            vec3 u, v, w;
             float theta = vfov * M_PI / 180;
             float half_height = tan(theta / 2);
             float half_width = aspect * half_height;
